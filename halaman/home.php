@@ -1,5 +1,4 @@
-
-        <!-- Start home section -->
+<!-- Start home section -->
         <div id="home">
             <!-- Start cSlider -->
             <div id="da-slider" class="da-slider">
@@ -69,7 +68,7 @@
                             </div>
                             <h3>E - Learning</h3>
                             <p>Pembelajaran Daring Santri MTs Husnul Khotimah</p>
-                            <button type="button"><a href="index.php?page=e-learning">Masuk Kelas</button>
+                            <button type="button"><a href="index.php?page=e-learning">Masuk Kelas</a></button>
                         </div>
                     </div>
                     <div class="span4">
@@ -79,14 +78,14 @@
                             </div>
                             <h3>Penilaian Akhir Tahun</h3>
                             <p>Penilaian AKhir Tahun Berbasis Komputer dan Smart-phone</p>
-                            <button type="button"><a href="index.php?page=pat-online-7i">Kelas 7 Putra</button>
-                            <button type="button"><a href="index.php?page=pat-online-7a">Kelas 7 Putri</button>
-                            <button type="button"><a href="index.php?page=pat-online-8i">Kelas 8 Putra</button>
+                            <button type="button"><a href="index.php?page=pat-online-7i">Kelas 7 Putra</a></button>
+                            <button type="button"><a href="index.php?page=pat-online-7a">Kelas 7 Putri</a></button>
+                            <button type="button"><a href="index.php?page=pat-online-8i">Kelas 8 Putra</a></button>
                             <br>
                             <br>
-                            <button type="button"><a href="index.php?page=pat-online-8a">Kelas 8 Putri</button>
-                            <button type="button"><a href="dokumen/materi-pat.pdf">materi-pat</button>
-                            <button type="button"><a href="dokumen/jadwal-pat.pdf">jadwal-ujian</button>
+                            <button type="button"><a href="index.php?page=pat-online-8a">Kelas 8 Putri</a></button>
+                            <button type="button"><a href="dokumen/materi-pat.pdf">materi-pat</a></button>
+                            <button type="button"><a href="dokumen/jadwal-pat.pdf">jadwal-ujian</a></button>
                         </div>
                     </div>
                     <div class="span4">
@@ -96,7 +95,7 @@
                             </div>
                             <h3>Rapor Siswa</h3>
                             <p>Laporan Hasil Pembelajaran Daring Santri</p>
-                            <button type="button"><a href="index.php?page=rapor-siswa">Lihat Rapor</button>
+                            <button type="button"><a href="index.php?page=rapor-siswa">Lihat Rapor</a></button>
                         </div>
                     </div>
                 </div>
@@ -111,36 +110,35 @@
                     <h1>Have You Taken our E-Learning Class?</h1>
                     <p>Media Pembelajaran Daring Santri MTs Husnul Khotimah</p>
                 </div>
-                    <ul id="portfolio-grid" class="thumbnails row">
-                        <li class="span4 mix web">
-                            <div class="thumbnail">
-                                <img src="images/Portfolio01.png" alt="project 1">
-                                <a href="#single-project" class="more show_hide" rel="#slidingDiv">
-                                    <i class="icon-plus"></i>
-                                </a>
-                                <h3>Kelas VII</h3>
-                            </div>
-                        </li>
-                        <li class="span4 mix photo">
-                            <div class="thumbnail">
-                                <img src="images/Portfolio02.png" alt="project 2">
-                                <a href="#single-project" class="show_hide more" rel="#slidingDiv1">
-                                    <i class="icon-plus"></i>
-                                </a>
-                                <h3>Kelas VIII</h3>
-                            </div>
-                        </li>
-                        <li class="span4 mix identity">
-                            <div class="thumbnail">
-                                <img src="images/Portfolio03.png" alt="project 3">
-                                <a href="#single-project" class="more show_hide" rel="#slidingDiv2">
-                                    <i class="icon-plus"></i>
-                                </a>
-                                <h3>Kelas IX</h3>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                <ul id="portfolio-grid" class="thumbnails row">
+                    <li class="span4 mix web">
+                        <div class="thumbnail">
+                            <img src="images/Portfolio01.png" alt="project 1">
+                            <a href="#single-project" class="more show_hide" rel="#slidingDiv">
+                                <i class="icon-plus"></i>
+                            </a>
+                            <h3>Kelas VII</h3>
+                        </div>
+                    </li>
+                    <li class="span4 mix photo">
+                        <div class="thumbnail">
+                            <img src="images/Portfolio02.png" alt="project 2">
+                            <a href="#single-project" class="show_hide more" rel="#slidingDiv1">
+                                <i class="icon-plus"></i>
+                            </a>
+                            <h3>Kelas VIII</h3>
+                        </div>
+                    </li>
+                    <li class="span4 mix identity">
+                        <div class="thumbnail">
+                            <img src="images/Portfolio03.png" alt="project 3">
+                            <a href="#single-project" class="more show_hide" rel="#slidingDiv2">
+                                <i class="icon-plus"></i>
+                            </a>
+                            <h3>Kelas IX</h3>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
         <!-- Portfolio section end -->
@@ -220,8 +218,8 @@
                         </div>
                     </div>
                 </div>
-                </br>
-                </br>
+                <br/>
+                <br/>
                 <div class="row-fluid team">
                     <div class="span4" id="first-person">
                         <div class="thumbnail">
@@ -290,8 +288,8 @@
                         </div>
                     </div>
                 </div>
-                </br>
-                </br>
+                <br/>
+                <br/>
                 <div class="row-fluid team">
                     <div class="span4" id="first-person">
                         <div class="thumbnail">
