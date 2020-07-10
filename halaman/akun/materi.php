@@ -1,3 +1,7 @@
+<?php
+$id = $_GET['id'];
+?>
+    
     <section id="inner-headline">
     <div class="container">
         <div class="row">
@@ -10,10 +14,8 @@
     <section id="content">
         <div class="container content">
             <?php
-                $materi = $data->tampilMateri('2');
+                $materi = $data->tampilMateri($id);
                 foreach ($materi as $key) :
-                    
-                    
             ?>
             <div class="row"> 
                 <div class="col-md-12">
@@ -40,7 +42,15 @@
                     <div class="about-text">
                         <h3><?= $key['judul']; ?></h3>
                         <p><?= $key['deskripsi']; ?></p>
+                        <?php
+                            if ( empty($key['file'])) {
+                                echo "";
+                            } else {
+                        ?>
                         <p><a href="<?php echo MAIN_URL.$key['file']; ?>"><button class="btn btn-medium">DOWNLOAD MATERI</button></a></p>
+                        <?php
+                            }
+                        ?>
                     </div>
                 </div>
             </div>

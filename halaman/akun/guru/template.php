@@ -1,3 +1,4 @@
+<?php ob_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,6 +17,7 @@
   <link rel="stylesheet" href="asset/dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <link rel="shortcut icon" href="..asset/main/img/favicon.png">
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -97,6 +99,15 @@
               </p>
             </a>
           </li>
+          <!--<li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+                CBT
+              </p>
+            </a>
+          </li>
+          Dinonaktifkan, hanya untuk admin saja-->
           <li class="nav-item">
             <a href="logout.php" class="nav-link">
               <i class="nav-icon fas fa-sign-out-alt"></i>

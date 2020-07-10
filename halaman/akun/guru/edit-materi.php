@@ -1,7 +1,7 @@
 <?php 
-
-$hasil = $data->getDb()->query("SELECT * FROM mapel ORDER BY nama");
-$mapel = $hasil->fetchAll();
+$id = $_GET['id'];
+$hasil = $data->getDb()->query("SELECT * FROM materi WHERE id = $id");
+$materi = $hasil->fetchAll();
 
 ?>
 <!-- Content Wrapper. Contains page content -->
@@ -26,12 +26,15 @@ $mapel = $hasil->fetchAll();
             <!-- general form elements -->
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">Tambah Materi</h3>
+                <h3 class="card-title">Edit Materi</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form role="form" method="post" action="upload.php" enctype="multipart/form-data">
+              <form role="form" method="post" action="reupload.php" enctype="multipart/form-data">
                 <div class="card-body">
+                    <?php
+                    foreach ($materi as $mt) :
+                    ?>
                   <div class="row">
                     <div class="col-sm-6">
                       <!-- select -->
@@ -48,28 +51,30 @@ $mapel = $hasil->fetchAll();
                       <div class="form-group">
                         <label>Pilih Mata Pelajaran</label>
                         <select class="form-control" name="mapel">
-                          <?php
+                        <?php
+                            $hasil2 = $data->getDb()->query("SELECT * FROM mapel");
+                            $mapel = $hasil2->fetchAll();
                             foreach ($mapel as $m) :
-                          ?>
-                          <option value="<?= $m['kode']; ?>"><?= $m['nama']; ?></option>
-                          <?php
+                        ?>
+                        <option value="<?= $m['kode']; ?>"><?= $m['nama']; ?></option>
+                        <?php
                             endforeach;
-                          ?>
+                        ?>
                         </select>
                       </div>
                     </div>
                   </div>
                   <div class="form-group">
                     <label>Video</label>
-                    <input type="text" class="form-control" placeholder="Masukkan link video di sini..." name="video">
+                    <input type="text" class="form-control" value="<?= htmlentities($mt['video']); ?>" name="video">
                   </div>
                   <div class="form-group">
                     <label>Judul Materi</label>
-                    <input type="text" class="form-control" placeholder="Isi judul materi.." name="judul_materi">
+                    <input type="text" class="form-control" value="<?= $mt['judul']; ?>" name="judul_materi">
                   </div>
                   <div class="form-group">
                     <label>Deskripsi singkat</label>
-                    <textarea class="form-control" rows="4" placeholder="Masukkan deskripsi singkat untuk materi ini.." name="deskripsi"></textarea>
+                    <textarea class="form-control" rows="4" name="deskripsi"><?= $mt['deskripsi']; ?></textarea>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputFile">File input</label>
@@ -80,8 +85,11 @@ $mapel = $hasil->fetchAll();
                       </div>
                     </div>
                   </div>
-                  <input type="hidden" name="username" value="<?= $username; ?>">
+                  <input type="hidden" name="id" value="<?= $mt['id']; ?>">
                 </div>
+                <?php
+                    endforeach;
+                ?>
                 <!-- /.card-body -->
                 <div class="card-footer">
                   <button type="submit" class="btn btn-primary">Submit</button>
@@ -120,15 +128,14 @@ $mapel = $hasil->fetchAll();
                     <?php
                         $query = $data->getDb()->query("SELECT * FROM guru_mapel WHERE guru_username = '$username'");
                         $guru = $query->fetchAll();
-                        // print_r($guru);
-                        $no = 1;
+                        //print_r($guru);
                         foreach ($guru as $g){
                             // echo $g['mapel_kode'];
                             $mapel = $g['mapel_kode'];
                             $query2 = $data->getDB()->query("SELECT * FROM materi WHERE mapel_kode = '$mapel'");
                             $materi = $query2->fetchAll();
                             // $materi = $data->tampilMateribyGuru($username);
-                            
+                            $no = 1;
                             foreach ($materi as $mt) :
                     ?>
                     <tr>
@@ -136,8 +143,8 @@ $mapel = $hasil->fetchAll();
                       <td><a href="../user.php?page=materi&id=<?= $mt['id']; ?>" target="_blank"><?= $mt['judul']; ?></a></td>
                       <td>
                         <div class="btn-group btn-group-sm">
-                          <a href="user.php?page=edit-materi&id=<?= $mt['id']; ?>" class="btn btn-info"><i class="fas fa-pencil-alt"></i></a>
-                          <a href="javascript:hapusData(<?= $mt['id']; ?>)" type="button" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+                          <a href="#" class="btn btn-info"><i class="fas fa-pencil-alt"></i></a>
+                          <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
                         </div>
                       </td>
                     </tr>
@@ -160,10 +167,3 @@ $mapel = $hasil->fetchAll();
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-  <script language="JavaScript" type="text/javascript">
-      function hapusData(id){
-        if (confirm("Apakah anda yakin akan menghapus data ini?")){
-          window.location.href = 'delete-materi.php?id=' + id;
-        }
-      }
-    </script>

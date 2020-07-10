@@ -1,3 +1,4 @@
+<?php ob_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,7 +53,15 @@
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
                         <li class="<?php if(!isset($_GET['page'])) {echo "active";}?>"><a href="index.php">Home</a></li>
+                        <?php
+                            if ( $_SESSION['status'] == 2 ) {
+                                echo"";
+                            } else {
+                        ?>
                         <li class="<?php if($_GET['page'] === "e-learning") {echo "active";}?>"><a href="user.php?page=e-learning">E-learning</a></li>
+                        <?php
+                            }
+                        ?>
                         <li><a href="logout.php">Logout</a></li>
                         <li><a href="index.php?page=kontak">Contact</a></li>
                     </ul>
