@@ -1,0 +1,6 @@
+/elearning-draft/
+*.sql
+tes.php
+asset/main/files/
+halaman/akun/env.php
+halaman/akun/guru/env.php
