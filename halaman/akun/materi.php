@@ -1,58 +1,43 @@
 <?php
 $id = $_GET['id'];
 ?>
-    
-    <section id="inner-headline">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="pageTitle">E - LEARNING</h2>
-            </div>
-        </div>
-    </div>
-    </section>
-    <section id="content">
-        <div class="container content">
+    <!-- Price section start -->
+    <div id="price" class="section secondary-section">
+        <div class="container">
             <?php
                 $materi = $data->tampilMateri($id);
                 foreach ($materi as $key) :
             ?>
-            <div class="row"> 
-                <div class="col-md-12">
-                    <div class="about-logo">
-                        <h3><?php
-                            $mapel = $data->tampilMapel($key['mapel_kode']);
-                            foreach ($mapel as $m) {
-                            echo $m['nama'];
-                            }
-                            ?>
-                        </h3>
-                        <p>Pembelajaran daring santri MTs Husnul Khotimah 2 Kuningan melalui video pembelajaran interaktif, rangkuman materi dan latihan pemahaman materi di setiap akhir pembelajaran.</p>
-                    </div>  
-                </div>
+            <div class="title">
+                <h1>
+                    <?php
+                        $mapel = $data->tampilMapel($key['mapel_kode']);
+                        foreach ($mapel as $m) {
+                        echo $m['nama'];
+                        }
+                    ?>
+                </h1>
+                <p>Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque dapibus in purus in dignissim.</p>
             </div>
-            <div class="row showcase-section">
-                <div class="col-md-12">
-                    <!--<img src="asset/main/img/dev1.png" alt="showcase image">-->
-                    <div class="embed-responsive embed-responsive-16by9">
+                    <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
                     <?= $key['video']; ?>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="about-text">
-                        <h3><?= $key['judul']; ?></h3>
-                        <p><?= $key['deskripsi']; ?></p>
-                        <?php
-                            if ( empty($key['file'])) {
-                                echo "";
-                            } else {
-                        ?>
-                        <p><a href="<?php echo MAIN_URL.$key['file']; ?>"><button class="btn btn-medium">DOWNLOAD MATERI</button></a></p>
-                        <?php
-                            }
-                        ?>
-                    </div>
-                </div>
+                 </div>
+
+            <div class="centered">
+                <h3>
+                    <?= $key['judul']; ?>
+                </h3>
+                <p class="price-text"><?= $key['deskripsi']; ?></p>
+                <?php
+                    if ( empty($key['file'])) {
+                        echo "";
+                    } else {
+                ?>
+                <a href="#contact" class="button">Contact Us</a>
+                <?php
+                    }
+                ?>
             </div>
             <div class="row">
                 <div id="disqus_thread"></div>
@@ -83,4 +68,5 @@ $id = $_GET['id'];
                 endforeach;
             ?>
         </div>
-    </section>
+    </div>
+    <!-- Price section end -->
