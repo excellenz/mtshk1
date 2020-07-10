@@ -34,7 +34,7 @@ $id = $_GET['id'];
                         echo "";
                     } else {
                 ?>
-                <a href="#contact" class="button">Contact Us</a><a href="#contact" class="button">Contact Us</a>
+                <a href="#contact" class="button">Contact Us</a>&nbsp<a href="#contact" class="button">Contact Us</a>
                 <?php
                     }
                 ?>
