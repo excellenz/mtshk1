@@ -1,5 +1,5 @@
 <?php
 
-define("DB_DATABASENAME", "u6857688_sim");
-define("DB_DATABASEUSER", "u6857688_admin");
-define("DB_DATABASEPASS", "##Jaruki1991");
+define("DB_DATABASENAME", "mtshk1");
+define("DB_DATABASEUSER", "hendra");
+define("DB_DATABASEPASS", "h4k4n3kunXXX");
