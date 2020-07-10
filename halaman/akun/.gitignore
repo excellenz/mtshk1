@@ -2,5 +2,5 @@
 *.sql
 tes.php
 asset/main/files/
-halamana/akun/env.php
+halaman/akun/env.php
 halaman/akun/guru/env.php
