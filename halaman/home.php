@@ -23,7 +23,7 @@
                         <h2>E - Learning</h2>
                         <h4>Sistem Pembelajaran Daring</h4>
                         <p>MTs Husnul Khotimah menyelenggarakan pembelajaran online berbasis komputer dan smart-phone, sebagai solusi pelaksanaan kegiatan pembelajaran jarak jauh selama masa pandemi Covid-19.</p>
-                        <a href="index.php?page=e-learning" class="da-link button">Masuk Kelas</a>
+                        <a href="https://mtshusnulkhotimah.com/halaman/akun/login.php" class="da-link button">Masuk Kelas</a>
                         <div class="da-img">
                             <img src="images/Slider02.png" width="320" alt="image02">
                         </div>
@@ -68,7 +68,7 @@
                             </div>
                             <h3>E - Learning</h3>
                             <p>Pembelajaran Daring Santri MTs Husnul Khotimah</p>
-                            <button type="button"><a href="index.php?page=e-learning">Masuk Kelas</a></button>
+                            <button type="button"><a href="https://mtshusnulkhotimah.com/halaman/akun/login.php">Masuk Kelas</a></button>
                         </div>
                     </div>
                     <div class="span4">
@@ -76,16 +76,11 @@
                             <div class="circle-border zoom-in">
                                 <img class="img-circle" src="images/Service2.png" alt="service 2" />
                             </div>
-                            <h3>Penilaian Akhir Tahun</h3>
-                            <p>Penilaian AKhir Tahun Berbasis Komputer dan Smart-phone</p>
-                            <button type="button"><a href="index.php?page=pat-online-7i">Kelas 7 Putra</a></button>
-                            <button type="button"><a href="index.php?page=pat-online-7a">Kelas 7 Putri</a></button>
-                            <button type="button"><a href="index.php?page=pat-online-8i">Kelas 8 Putra</a></button>
-                            <br>
-                            <br>
-                            <button type="button"><a href="index.php?page=pat-online-8a">Kelas 8 Putri</a></button>
-                            <button type="button"><a href="dokumen/materi-pat.pdf">materi-pat</a></button>
-                            <button type="button"><a href="dokumen/jadwal-pat.pdf">jadwal-ujian</a></button>
+                            <h3>Online Test</h3>
+                            <p>Penilaian Hasil Pembelajaran Berbasis Komputer dan Smartphone</p>
+                            <button type="button"><a href="index.php?page=pat-online-7">Kelas 7</a></button>
+                            <button type="button"><a href="index.php?page=pat-online-8">Kelas 8</a></button>
+                            <button type="button"><a href="index.php?page=pat-online-9">Kelas 9</a></button>
                         </div>
                     </div>
                     <div class="span4">

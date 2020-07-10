@@ -69,17 +69,14 @@
 			case 'home':
 				include "halaman/home.php";
 				break;
-            case 'pat-online-7a':
-                include "halaman/pat-online-7a.php";
+            case 'pat-online-7':
+                include "halaman/pat-online-7.php";
                 break;
-            case 'pat-online-7i':
-                include "halaman/pat-online-7i.php";
+            case 'pat-online-8':
+                include "halaman/pat-online-8.php";
                 break;
-            case 'pat-online-8a':
-                include "halaman/pat-online-8a.php";
-                break;
-            case 'pat-online-8i':
-                include "halaman/pat-online-8i.php";
+            case 'pat-online-9':
+                include "halaman/pat-online-9.php";
                 break;
             case 'e-learning':
                 include "halaman/e-learning.php";
