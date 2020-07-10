@@ -25,9 +25,9 @@ $id = $_GET['id'];
                  </div>
 
             <div class="centered">
-                <h2>
+                <h5>
                     <?= $key['judul']; ?>
-                </h2>
+                </h5>
                 <p class="price-text"><?= $key['deskripsi']; ?></p>
                 <?php
                     if ( empty($key['file'])) {
