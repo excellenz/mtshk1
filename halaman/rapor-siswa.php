@@ -13,7 +13,7 @@
 
                 <div class="about-text centered">
                     <h3>Informasi Rapor Siswa</h3>
-                    <p>Mohon maaf halaman ini belum tersedia. Halaman ini akan aktif setelah pelaksanaan PAT, 15 Juni 2020.</p>
+                    <p>Mohon maaf halaman ini belum tersedia.</p>
                 </div>
  
             </div>
