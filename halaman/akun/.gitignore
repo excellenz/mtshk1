@@ -2,3 +2,5 @@
 *.sql
 tes.php
 asset/main/files/
+env.php
+guru/env.php
