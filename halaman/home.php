@@ -12,7 +12,7 @@
                         <h2 class="fittext2">Welcome to MTS Husnul Khotimah</h2>
                         <h4>Generasi Rabbani Berprestasi dan Mahir Berbahasa</h4>
                         <p>MTs Husnul Khotimah  memiliki visi untuk mewujudkan generasi rabbani dengan prestasi optimal dan kemahiran berbahasa Arab dan Inggris.</p>
-                        <a href="index.php?page=kontak" class="da-link button">Profil Lengkap</a>
+                        <a href="index.php?page=profil" class="da-link button">Profil Lengkap</a>
                         <div class="da-img">
                             <img src="images/Slider01.png" alt="image01" width="320">
                         </div>
@@ -34,7 +34,7 @@
                         <h2>Unggul dan Professional</h2>
                         <h4>MTs Professional untuk Melahirkan Siswa Yang Unggul</h4>
                         <p>MTs Husnul Khotimah memiliki moto terdepan dalam pelayanan, professional dalam bekerja dan akurat dalam data untuk mendidik santri yang berakhlak mulia, rajin beribadah, disiplin, sederhana, gemar membaca dan menulis.</p>
-                        <a href="index.php?page=kontak" class="da-link button">Lihat Profil</a>
+                        <a href="index.php?page=profil" class="da-link button">Lihat Profil</a>
                         <div class="da-img">
                             <img src="images/Slider03.png" width="320" alt="image03">
                         </div>
