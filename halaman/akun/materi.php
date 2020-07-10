@@ -34,7 +34,7 @@ $id = $_GET['id'];
                         echo "";
                     } else {
                 ?>
-                <a href="#contact" class="button">Contact Us</a>&nbsp<a href="#contact" class="button">Contact Us</a>
+                <a href="<?php echo MAIN_URL.$key['file']; ?>" class="button">DOWNLOAD MATERI</a>&nbsp<a href="#contact" class="button">Contact Us</a>
                 <?php
                     }
                 ?>
