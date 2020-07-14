@@ -57,7 +57,7 @@
                 </div>
             </div>
         </div>
-  <!-- End menu -->
+        <!-- End menu -->
         <?php require ($content); ?>
         <!-- Footer section start -->
         <div class="footer">
