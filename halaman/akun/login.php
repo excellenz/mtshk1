@@ -4,7 +4,7 @@ require ("function.php");
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>MTs HK 2 | Masuk</title>
+	<title>MTs HK | Masuk</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<base <?php echo "href='".MAIN_URL."'"; ?>>
@@ -68,8 +68,8 @@ require ("function.php");
 						</a>
 					</div>
 					<div class="text-center p-t-136">
-						<a class="txt2" href="https://mtshakadua.sch.id">
-							MTs HK 2 Portal
+						<a class="txt2" href="https://mtshusnulkhotimah.sch.id">
+							MTs Husnul Khotimah Portal
 							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
 						</a>
 					</div>

@@ -20,7 +20,7 @@ $data_mapel = $data->getDb()->query("SELECT * FROM mapel WHERE level = $level");
             <div class="triangle"></div>
             <div class="container">
                 <div class="title">
-                    <h1>E - Learning</h1>
+                    <h1>E - Learning - <?= $nama_lengkap." - ".$level; ?></h1>
                     <p>Pembelajaran Daring Melalui Video Pembelajaran, Rangkuman Materi Dan Tes Pehahaman Materi.</p>
                 </div>
                 <div class="row-fluid team">
@@ -33,7 +33,8 @@ $data_mapel = $data->getDb()->query("SELECT * FROM mapel WHERE level = $level");
                         <div class="thumbnail">
                             <img src="<?= $m['gambar']; ?>" img="images">
                             <h3><?= $m['nama']; ?></h3>
-                            <select name="id_mater" id="cars">
+                            <form role="form" method="post" action="tampil-materi.php" enctype="multipart/form-data">
+                            <select name="id_materi" id="cars">
                             <option value="-">Pilih Materi</option>
                             <?php                        
                                 foreach ($materi as $mat) {
@@ -44,8 +45,11 @@ $data_mapel = $data->getDb()->query("SELECT * FROM mapel WHERE level = $level");
                             ?>
                             </select>
                             <p>
-                                <label for="cars"><a href="user.php?page=materi&id=<?= $mat['id']; ?>"><button  class="btn btn-medium"> Pilih Materi</button></a></label>
+                                <input type="hidden" name="nama_santri" value="<?= $nama_lengkap; ?>">
+                                <input type="hidden" name="level" value="<?= $level; ?>">
+                                <label for="cars"><button  type="submit" class="btn btn-medium"> Pilih Materi</button></label>
                             </p>
+                            </form>
                         </div>
                     </div>
                     <?php

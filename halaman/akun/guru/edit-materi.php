@@ -52,7 +52,7 @@ $materi = $hasil->fetchAll();
                         <label>Pilih Mata Pelajaran</label>
                         <select class="form-control" name="mapel">
                         <?php
-                            $hasil2 = $data->getDb()->query("SELECT * FROM mapel");
+                            $hasil2 = $data->getDb()->query("SELECT * FROM mapel ORDER BY nama");
                             $mapel = $hasil2->fetchAll();
                             foreach ($mapel as $m) :
                         ?>
@@ -80,7 +80,7 @@ $materi = $hasil->fetchAll();
                     <label for="exampleInputFile">File input</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="exampleInputFile" name="file">
+                        <input type="file" class="custom-file-input" id="exampleInputFile" name="file" accept="application/pdf, application/vnd.openxmlformats-officedocument.presentationml.presentation, application/vnd.ms-powerpoint, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document">
                         <label class="custom-file-label" for="exampleInputFile">Masukkan file materi</label>
                       </div>
                     </div>
@@ -93,6 +93,7 @@ $materi = $hasil->fetchAll();
                 <!-- /.card-body -->
                 <div class="card-footer">
                   <button type="submit" class="btn btn-primary">Submit</button>
+                  <!--<a href="index.php" class="btn btn-info">Cancel</a>-->
                 </div>
               </form>
             </div>

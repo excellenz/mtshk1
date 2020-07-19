@@ -10,11 +10,11 @@ $passwd = $_POST['passwd'];
 
 if (!isset($username) || !isset($passwd))
 {
-	header("location: https://mtshakadua.sch.id/halaman/akun/login.php");
+	header("location: https://mtshusnulkhotimah.sch.id/halaman/akun/login.php");
 }
 elseif (empty($username) || empty($passwd))
 {
-	header("location: https://mtshakadua.sch.id/halaman/akun/login.php");
+	header("location: https://mtshusnulkhotimah.sch.id/halaman/akun/login.php");
 }
 
 else
@@ -48,6 +48,6 @@ else
 	}
 	else
 	{
-		header("location: https://mtshakadua.sch.id/halaman/akun/login.php");
+		header("location: https://mtshusnulkhotimah.sch.id/halaman/akun/login.php");
 	}
 }

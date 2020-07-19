@@ -51,7 +51,7 @@
                         <ul class="nav" id="top-navigation">
                             <li class="<?php if(!isset($_GET['page'])) {echo "active";}?>"><a href="index.php">Home</a></li>
                             <li class="<?php if($_GET['page'] === "profil") {echo "active";}?>"><a href="index.php?page=profil">Profil</a></li>
-                            <li><a href="https://mtshusnulkhotimah.com/halaman/akun/login.php">Login</a></li>
+                            <li><a href="halaman/akun/">Login</a></li>
                             <li class="<?php if($_GET['page'] === "kontak") {echo "active";}?>"><a href="index.php?page=kontak">Hubungi Kami</a></li>
                         </ul>
                     </div>

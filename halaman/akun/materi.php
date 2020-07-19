@@ -17,7 +17,7 @@ $id = $_GET['id'];
                         }
                     ?>
                 </h1>
-                <p>Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque dapibus in purus in dignissim.</p>
+                <p>Pembelajaran daring santri MTs Husnul Khotimah Kuningan melalui video pembelajaran interaktif, rangkuman materi dan latihan pemahaman materi di setiap akhir pembelajaran.</p>
             </div>
                     <!-- 16:9 aspect ratio -->
                 <div class="embed-responsive embed-responsive-16by9">
@@ -34,11 +34,8 @@ $id = $_GET['id'];
                         echo "";
                     } else {
                 ?>
-                <a href="<?php echo MAIN_URL.$key['file']; ?>" class="button">DOWNLOAD MATERI</a>&nbsp<a href="#" class="button">TES PEMAHAMAN</a>
-                <?php
-                    }
-                ?>
-            </div>
+                <a href="<?php echo MAIN_URL.$key['file']; ?>" target="_blank" class="button">DOWNLOAD MATERI</a><?php } ?>&nbsp<a href="https://excellenz-data-2.com/7" target="_blank" class="button">TES PEMAHAMAN</a>
+                </div>
             <div class="row">
                 <div id="disqus_thread"></div>
                     <script>

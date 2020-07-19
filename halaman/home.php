@@ -23,7 +23,7 @@
                         <h2>E - Learning</h2>
                         <h4>Sistem Pembelajaran Daring</h4>
                         <p>MTs Husnul Khotimah menyelenggarakan pembelajaran online berbasis komputer dan smart-phone, sebagai solusi pelaksanaan kegiatan pembelajaran jarak jauh selama masa pandemi Covid-19.</p>
-                        <a href="https://mtshusnulkhotimah.com/halaman/akun/login.php" class="da-link button">Masuk Kelas</a>
+                        <a href="halaman/akun/" class="da-link button">Masuk Kelas</a>
                         <div class="da-img">
                             <img src="images/Slider02.png" width="320" alt="image02">
                         </div>
@@ -68,7 +68,7 @@
                             </div>
                             <h3>E - Learning</h3>
                             <p>Pembelajaran Daring Santri MTs Husnul Khotimah</p>
-                            <button type="button"><a href="https://mtshusnulkhotimah.com/halaman/akun/login.php">Masuk Kelas</a></button>
+                            <button type="button"><a href="halaman/akun/">Masuk Kelas</a></button>
                         </div>
                     </div>
                     <div class="span4">

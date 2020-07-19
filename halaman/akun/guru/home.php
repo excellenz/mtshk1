@@ -75,7 +75,7 @@ $mapel = $hasil->fetchAll();
                     <label for="exampleInputFile">File input</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="exampleInputFile" name="file">
+                        <input type="file" class="custom-file-input" id="exampleInputFile" name="file" accept="application/pdf, application/vnd.openxmlformats-officedocument.presentationml.presentation, application/vnd.ms-powerpoint, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document">
                         <label class="custom-file-label" for="exampleInputFile">Masukkan file materi</label>
                       </div>
                     </div>
@@ -133,7 +133,7 @@ $mapel = $hasil->fetchAll();
                     ?>
                     <tr>
                       <td><?= $no; ?></td>
-                      <td><a href="../user.php?page=materi&id=<?= $mt['id']; ?>" target="_blank"><?= $mt['judul']; ?></a></td>
+                      <td><a href="../user.php?page=tampil-materi&id=<?= $mt['id']; ?>" target="_blank"><?= $mt['judul']; ?></a></td>
                       <td>
                         <div class="btn-group btn-group-sm">
                           <a href="user.php?page=edit-materi&id=<?= $mt['id']; ?>" class="btn btn-info"><i class="fas fa-pencil-alt"></i></a>
