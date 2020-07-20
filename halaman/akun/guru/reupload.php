@@ -1,4 +1,6 @@
 <?php
+
+require "log.php";
 include "function.php";
 include "database.php";
 
