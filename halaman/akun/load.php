@@ -34,5 +34,6 @@ else
 
 	$_SESSION['LAST_ACTIVITY'] = time();
 
+	require "log.php";
 	require "template.php";
 }

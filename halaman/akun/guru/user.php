@@ -1,5 +1,6 @@
 <?php
 session_start();
+require "log.php";
 include "database.php";
 include "function.php";
 

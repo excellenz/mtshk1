@@ -1,3 +1,6 @@
+<?php
+require "log.php";
+?>
 <!DOCTYPE html>
 <!--
  * A Design by GraphBerry
