@@ -10,4 +10,4 @@ $hasil = $absen->getDb()->query($log);
 
 unset($_SESSION['username']);
 session_destroy();
-header("location: https://mtshusnulkhotimah.sch.id");
+header("location: ".MAIN_URL."index.php");
