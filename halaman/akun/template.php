@@ -50,7 +50,14 @@
                     <div class="nav-collapse collapse pull-right">
                         <ul class="nav" id="top-navigation">
                             <li class="<?php if(!isset($_GET['page'])) {echo "active";}?>"><a href="index.php">Home</a></li>
-                            <li class="<?php if(isset($_GET['page'])) {echo "active";}?>"><a href="pemira/index.php">Pemira</a></li> 
+                            <?php 
+                                date_default_timezone_set('Asia/Jakarta');
+                                $now = strtotime("22-08-2020 11:55 am");
+                                $konv = date('d-m-Y  h:i a', $now);
+                                if (date('d-m-Y  h:i a') >= $konv) :
+                            ?>
+                            <li class="<?php if(isset($_GET['page'])) {echo "active";}?>"><a href="pemira/index.php">Pemira</a></li>
+                            <?php endif; ?>
                             <li><a href="logout.php">Logout</a></li>
                         </ul>
                     </div>
