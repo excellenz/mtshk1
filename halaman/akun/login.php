@@ -9,7 +9,7 @@ require ("function.php");
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<base <?php echo "href='".MAIN_URL."'"; ?>>
 <!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="asset/login/images/icons/favicon.png"/>
+	<link rel="icon" type="image/png" href="asset/login/images/icons/favicon-mts.ico"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="asset/login/vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
