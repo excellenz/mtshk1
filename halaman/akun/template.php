@@ -50,7 +50,7 @@
                     <div class="nav-collapse collapse pull-right">
                         <ul class="nav" id="top-navigation">
                             <li class="<?php if(!isset($_GET['page'])) {echo "active";}?>"><a href="index.php">Home</a></li>
-                            <li class="<?php if(isset($_GET['page'])) {echo "active";}?>"><a href="pemira/index.php">Pemira</a></li>
+                            <!--<li class="<?php // if(isset($_GET['page'])) {echo "active";}?>"><a href="pemira/index.php">Pemira</a></li>-->
                             <li><a href="logout.php">Logout</a></li>
                         </ul>
                     </div>
